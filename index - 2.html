@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+
+    <!-- External Style-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <header > <!--Inline Style-->
+        <img src="assets/img/logo.png" alt="" width="62">
+       <!-- <img src="assets/img/globe.svg" alt="" width="27" style="float: right"> -->
+       <ul style="width:80px">
+        <img src="assets/img/globe.svg" alt="" width="27" style="float:left; margin-right: 10px;" >
+           <li>EN</li>
+           <li style="display: none;">TH</li>
+       </ul>
+    </header>
+    <section id="hero">
+        <div id="arrowarea"></div>
+        <div class="container">
+            <div class="slider">
+                <div>
+                    <img src="assets/img/V_AGENTS_587x900_Jett.png" alt="" >
+                </div>
+                <div>
+                    <img src="assets/img/V_AGENTS_587x900_Brimstone.png" alt="" >
+                </div>
+                <div>
+                    <img src="assets/img/V_AGENTS_587x900_ALL_Raze_2.png" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/V_AGENTS_587x900_Breach.png" alt="" >
+                </div>
+                <div>
+                    <img src="assets/img/V_AGENTS_587x900_Jett.png" alt="" >
+                </div>
+                <div>
+                    <img src="assets/img/V_AGENTS_587x900_Brimstone.png" alt="" >
+                </div>
+                <div>
+                    <img src="assets/img/V_AGENTS_587x900_ALL_Raze_2.png" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/V_AGENTS_587x900_Breach.png" alt="" >
+                </div>
+            </div>  
+        </div>
+       
+    </section>
+    <section id="detail">
+        
+        <div class="container" style="max-width:1200px; overflow: visible;">
+           
+            <div id="profile" class="w50" style="border-right:1px solid silver; box-sizing: border-box;">
+                <h2>JETT</h2>
+                <br>
+                <p>Representing her home country of South Korea,<br>
+                Jett's agile and evasive fighting style <br>
+                lets her take risks no one else can. <br>
+                She runs circles around every skirmish,<br>
+                cuting enemies before they even know what hit them.</p>
+            </div>
+            <div class="w50">
+                <div id="skill-wrap">
+                    <ul id="skill-tab">
+                        <li><img src="assets/img/Q---UPDRAFT.png" alt=""> </li>
+                        <li><img src="assets/img/E---TAILWIND.png" alt=""></li>
+                        <li><img src="assets/img/C---CLOUDBURST.png" alt=""></li>
+                        <li><img src="assets/img/X---BLADE-STORM.png" alt=""></li>
+                    </ul>
+
+                    <style>
+                      .skill-desc{display: none;}
+                        #skillq {display: block;}
+                    </style>
+                    <div id="skill-detail">
+                        <div class="skill-desc" id="skillq"> 
+                            <h2>Q - UPDRAFT</h2>
+                            <p>INSTANTLY propel Jett high into the air.</p>
+                        </div>
+                        <div class="skill-desc" id="skille">
+                            <h2>E - TAILWIND</h2>
+                            <p>INSTANTLY propel Jett in 
+                                the direction she is moving.If Jett is 
+                                standing still, she will propel forward.
+                            </p>
+                        </div>
+                        <div class="skill-desc" id="skillc">
+                            <h2>C - CLOUDBURST</h2>
+                            <p>INSTANTLY throw a projectile that 
+                                expands into a brief vision-blocking 
+                                cloud on impact with a surface. HOLD 
+                                the ability key to curve the smoke in 
+                                the direction of your crosshair.
+                            </p>
+                        </div>
+                        <div class="skill-desc" id="skillx">
+                            <h2>X - BLADE STORM </h2>
+                            <p>EQUIP a set of highly accurate knives
+                                that recharge on killing an opponent. 
+                               FIRE to throw a single knife at your 
+                               target.ALTERNATE FIRE to throw all 
+                               remaining daggers at your target.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                    
+                
+            </div>
+        </div>
+        </div>
+    </section>    
+    <footer>
+        <img src="assets/img/logo.png" alt=""><br><br>
+        <h3>Design by Shinerut Ball</h3>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                slidesToShow: 4,
+                appendArrows: $('#arrowarea'),
+                prevArrow: "<button class='slick-prev'> < </button>",
+                nextArrow: "<button class='slick-next'> > </button>",
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+
+
+<style>
+@media only screen and (max-width: 850px) {
+    #skill-tab li {width: 45px; height: 45px;}
+   li img {width: 100%}
+   #detail p {font-size: 16px;}
+}
+
+@media only screen and (max-width: 769px){
+    .w50 {width: 100%;}
+    #detail {overflow: auto;}
+    #skill-wrap {top:0px}
+ #skill-tab {display: none;}    
+#skill-tab li {display: block; width: 55px; height: 55px; margin: 10px;}
+#skill-tab {width: auto; float: left;}
+.skill-desc {margin: 10px; padding-left: 60px; display: block; margin-bottom: 2rem;}
+#skillq {background: url('assets/img/Q---UPDRAFT.png'); background-repeat: no-repeat;}
+#skille {background: url('assets/img/E---TAILWIND.png'); background-repeat: no-repeat;}
+#skillc {background: url('assets/img/C---CLOUDBURST.png'); background-repeat: no-repeat;}
+#skillx {background: url('assets/img/X---BLADE-STORM.png'); background-repeat: no-repeat;}
+
+}
+
+
+</style>
+
+
+</html>

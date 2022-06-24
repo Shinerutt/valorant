@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+*{margin: 0px; padding: 0px;}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Fugaz One', cursive ;}
+ul > li{
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+}
+#detail p{
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+
+#detail h2{
+    color: #013379;
+    font-size: 3.5em;    
+}
+
+#skill-detail h2{
+    font-family: "Bebas Neue";
+    color: #000;
+    text-align: right;
+    font-size: 2.5em; 
+}
+
+.slick-prev, .slick-next{
+    font-family: 'DM Sans';
+    font-size: 2.8em;
+    font-style: normal;
+    line-height: 30px;
+    text-align: center;
+    /* padding:5px 5px */
+    padding-top: 2px;
+
+    /* font-size:2rem; */
+}
+
+.slick-next {
+    padding-left: 4px;
+}
+
+
+footer h3{
+    font-family: 'Bebas Neue';
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+}
+

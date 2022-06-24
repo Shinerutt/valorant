@@ -1,0 +1,86 @@
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    /* padding: 10px 10px 10px 10px; */
+    /* padding: 10px; */ /*ทั้ง 4 ด้านเป็นค่าเดียวกัน*/
+    padding: 10px 50px; /*ค่าแรกคือ บน กับล่าง ค่าที่สอง คือ ซ้ายกับขวา*/
+    /*padding: 10px 50px 100px; /*ค่าแรกคือ บน ค่าที่สอง คือ ซ้ายกับขวา ค่าที่สาม คือ ล่าง*/
+    /*padding: 10px 50px 100px 200px; /*ค่าแรกคือ บน ค่าที่สอง คือ ขวา ค่าที่สาม คือ ล่าง ค่าที่ 4 คือ ซ้าย*/        
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box; /*กันไม่ให้ขนาดขยายมากเกินไป*/
+}
+
+footer{
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 40px;
+
+}
+footer img{ width: 80px;}
+ul {
+    float: right ;
+    list-style: none;
+    padding-top: 7px;
+}
+ul > li {
+     color: white;
+ }
+
+li:hover{
+    background: #FF4655 !important;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.w50{
+    width:50%; float: left
+}
+
+
+ /*Slider*/
+ .slick-prev, .slick-next { background: white;  width:40px; height: 40px; border-radius: 50%; border: none; box-shadow: 1px 2px 5px #555; }
+ .slick-next { float:right ;bottom:50%; position: relative; z-index: 999;}
+ .slick-prev {top:45%; position: relative; z-index: 999;}
+
+ /*Hero Section*/
+ .container {
+    max-width: 1820px;
+    margin:auto;
+    overflow: auto;
+    position:relative;       
+}
+.slider{width: 100%; }
+.slider div {
+    width: 100%;
+}
+
+#hero {
+    /* min-height:800px; */
+    background: url("/assets/img/business-presentation-banner-with-blue-geometric-shape_1017-32330.webp");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 140px 70px 70px;
+    box-sizing: border-box;
+/* background-size: 100%; background-repeat: no-repeat; */
+}
+
+#hero img {width: 100%;}  
+#arrowarea {margin-top:15%; position: absolute; width: 90%;}
+
+/*Detail Section*/
+#detail{
+    background: rgb(217,217,217);
+background: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 50%, rgba(217,217,217,1) 100%);
+padding: 30px;
+/* overflow: visible; */
+min-height: 250px;
+}
+
+/*Skill Detail*/
+#skill-wrap {position: relative; top:-60px; z-index: 999;}
+#skill-tab{float: right; clear: both; width: 100%; text-align: right; padding: 0px; margin-bottom: 20px;}
+#skill-tab li {padding:5px; display: inline-block; background: white; width: 55px; height: 55px; border: 1px solid silver; text-align: center; margin: 0px 15px; z-index: 999; position: relative;}
+#skill-tab li:last-child{margin-right:0px}
+#skill-detail p {text-align: right;}
