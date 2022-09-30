@@ -50,3 +50,7 @@ footer h3{
     letter-spacing: 0.5px;
 }
 
+h2 span{
+    text-transform: uppercase;
+}
+

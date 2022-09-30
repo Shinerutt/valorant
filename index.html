@@ -16,6 +16,7 @@
     <!-- Slick Slider -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
 </head>
 <body>
     <header > <!--Inline Style-->
@@ -32,28 +33,28 @@
         <div class="container">
             <div class="slider">
                 <div>
-                    <img src="assets/img/V_AGENTS_587x900_Jett.png" alt="" >
+                    <img src="assets/img/Jett.png" alt="" >
                 </div>
                 <div>
-                    <img src="assets/img/V_AGENTS_587x900_Brimstone.png" alt="" >
+                    <img src="assets/img/Brimstone.png" alt="" >
                 </div>
                 <div>
-                    <img src="assets/img/V_AGENTS_587x900_ALL_Raze_2.png" alt="">
+                    <img src="assets/img/Raze.png" alt="">
                 </div>
                 <div>
-                    <img src="assets/img/V_AGENTS_587x900_Breach.png" alt="" >
+                    <img src="assets/img/Breach.png" alt="" >
                 </div>
                 <div>
-                    <img src="assets/img/V_AGENTS_587x900_Jett.png" alt="" >
+                    <img src="assets/img/Jett.png" alt="" >
                 </div>
                 <div>
-                    <img src="assets/img/V_AGENTS_587x900_Brimstone.png" alt="" >
+                    <img src="assets/img/Brimstone.png" alt="" >
                 </div>
                 <div>
-                    <img src="assets/img/V_AGENTS_587x900_ALL_Raze_2.png" alt="">
+                    <img src="assets/img/Raze.png" alt="">
                 </div>
                 <div>
-                    <img src="assets/img/V_AGENTS_587x900_Breach.png" alt="" >
+                    <img src="assets/img/Breach.png" alt="" >
                 </div>
             </div>  
         </div>
@@ -66,7 +67,7 @@
             <div id="profile"class="w50" style="border-right:1px solid silver; box-sizing: border-box;">
                 <h2 id="name"><span>JETT</span></h2>
                 <br>
-                <p>Representing her home country of South Korea,<br>
+                <p id="chardesc">Representing her home country of South Korea,<br>
                 Jett's agile and evasive fighting style <br>
                 lets her take risks no one else can. <br>
                 She runs circles around every skirmish,<br>
@@ -84,9 +85,7 @@
                         <h2>Q - UPDRAFT</h2>
                         <p><br>INSTANTLY propel Jett high into the air.</p>
                     </div>
-                </div>
-                    
-                
+                </div>    
             </div>
         </div>
         </div>
@@ -95,74 +94,7 @@
         <img src="assets/img/logo.png" alt=""><br><br>
         <h3>Design by Shinerut Ball</h3>
     </footer>
-    <script>
-        $(document).ready(function(){
-            $('.slider').slick({
-                slidesToShow: 4,
-                appendArrows: $('#arrowarea'),
-                prevArrow: "<button class='slick-prev'> < </button>",
-                nextArrow: "<button class='slick-next'> > </button>",
-                adaptiveHeight: true,
-                responsive: [
-                    {
-                    breakpoint: 850,
-                        settings: {
-                            slidesToShow: 2,
-                            // slidesToScroll: 3,
-                            // infinite: true,
-                            // dots: true
-                        }
-                    },
-                    {
-                    breakpoint: 450,
-                        settings: {
-                            slidesToShow: 1,
-                            // slidesToScroll: 3,
-                            // infinite: true,
-                            // dots: true
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
+    <!-- function -->
+    <script src="assets/js/function.js" ></script>
 </body>
-
-
-<style>
-@media only screen and (max-width: 850px) {
-    /* #profile{ display: none;} */
-    .w50{
-        width: 100%;
-
-        justify-content: center;
-        display: flex;
-    }
-    #skill-detail h2 {text-align: center;}
-    #arrowarea {margin-top: 30%; width: 100%; padding: 15px; box-sizing: border-box;}
-    #hero {padding: 100px 0px;}
-    #detail {padding: 30px 0px 0px; }
-    #detail p:nth-child(3) {background:#9D9D9D; color:white; padding: 3rem 1rem; text-align: center;}
-    #detail .container {display:flex; flex-direction:column-reverse}
-    #profile{display: block; border: none !important;}
-
-    #profile h2 {text-align: center;}
-    #profile h2 span{background: white; 
-        padding: 5px 20px;
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);}
-
-    h2#name {position: relative; top:45px}
-    #hero {padding-bottom:3rem}
-}
-
-@media only screen and (max-width: 450px){
-    
-    #hero img {width: 80%; margin: auto;}
-    #arrowarea {margin-top: 50%;}
-    #skill-tab li:last-child {margin-right: 15px;}
-    #skill-tab li {margin: 0px 5px;}
-}
-</style>
-
-
 </html>

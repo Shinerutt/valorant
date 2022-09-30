@@ -42,7 +42,9 @@ li:hover{
  .slick-prev, .slick-next { background: white;  width:40px; height: 40px; border-radius: 50%; border: none; box-shadow: 1px 2px 5px #555; }
  .slick-next { float:right ;bottom:50%; position: relative; z-index: 999;}
  .slick-prev {top:45%; position: relative; z-index: 999;}
-
+ .slick-slide img {filter: grayscale();}
+ .slick-current img{filter: none !important;}
+ /* .slick-slide:nth-child(3) img{filter: none !important;} */
  /*Hero Section*/
  .container {
     max-width: 1820px;
@@ -84,3 +86,38 @@ min-height: 250px;
 #skill-tab li {padding:5px; display: inline-block; background: white; width: 55px; height: 55px; border: 1px solid silver; text-align: center; margin: 0px 15px; z-index: 999; position: relative;}
 #skill-tab li:last-child{margin-right:0px}
 #skill-detail p {text-align: right;}
+
+
+/* Responsive */
+@media only screen and (max-width: 850px) {
+    /* #profile{ display: none;} */
+    .w50{
+        width: 100%;
+
+        justify-content: center;
+        display: flex;
+    }
+    #skill-detail h2 {text-align: center;}
+    #arrowarea {margin-top: 30%; width: 100%; padding: 15px; box-sizing: border-box;}
+    #hero {padding: 100px 0px;}
+    #detail {padding: 30px 0px 0px; }
+    #detail p:nth-child(3) {background:#9D9D9D; color:white; padding: 3rem 1rem; text-align: center;}
+    #detail .container {display:flex; flex-direction:column-reverse}
+    #profile{display: block; border: none !important;}
+
+    #profile h2 {text-align: center;}
+    #profile h2 span{background: white; 
+        padding: 5px 20px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);}
+
+    h2#name {position: relative; top:45px}
+    #hero {padding-bottom:3rem}
+}
+
+@media only screen and (max-width: 450px){
+    
+    #hero img {width: 80%; margin: auto;}
+    #arrowarea {margin-top: 50%;}
+    #skill-tab li:last-child {margin-right: 15px;}
+    #skill-tab li {margin: 0px 5px;}
+}
