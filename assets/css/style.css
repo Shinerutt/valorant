@@ -57,6 +57,11 @@ li:hover{
     width: 100%;
 }
 
+#skill-tab li img{
+    filter: invert(100%) invert(14%) sepia(35%) saturate(5524%) hue-rotate(202deg) brightness(98%) contrast(108%);
+    width: 100%;
+}
+
 #hero {
     /* min-height:800px; */
     background: url("/assets/img/business-presentation-banner-with-blue-geometric-shape_1017-32330.webp");
@@ -103,6 +108,7 @@ min-height: 250px;
     #detail {padding: 30px 0px 0px; }
     #detail p:nth-child(3) {background:#9D9D9D; color:white; padding: 3rem 1rem; text-align: center;}
     #detail .container {display:flex; flex-direction:column-reverse}
+    #skill-detail p,#skill-tab{text-align: center;}
     #profile{display: block; border: none !important;}
 
     #profile h2 {text-align: center;}
@@ -113,7 +119,10 @@ min-height: 250px;
     h2#name {position: relative; top:45px}
     #hero {padding-bottom:3rem}
 }
-
+@media only screen and (max-width:576px){
+    #skill-detail p{padding: 20px;}
+    #skill-detail p br{display: none;}
+}
 @media only screen and (max-width: 450px){
     
     #hero img {width: 80%; margin: auto;}
